@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9429731-a018-4082-927e-691771397c17" name="Changes" comment="next 001">
+    <list default="true" id="f9429731-a018-4082-927e-691771397c17" name="Changes" comment="next 002">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/hexlet/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/hexlet/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/hexlet/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/hexlet/Application.java" afterDir="false" />
     </list>
@@ -17,6 +19,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hexlet-jdbc" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739092729128</updated>
-      <workItem from="1739092731758" duration="2158000" />
+      <workItem from="1739092731758" duration="7291000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <option name="closed" value="true" />
@@ -122,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739096635016</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="next 002">
+      <option name="closed" value="true" />
+      <created>1739171489693</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739171489693</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +158,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="next 001" />
-    <option name="LAST_COMMIT_MESSAGE" value="next 001" />
+    <MESSAGE value="next 002" />
+    <option name="LAST_COMMIT_MESSAGE" value="next 002" />
   </component>
 </project>

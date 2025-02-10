@@ -13,40 +13,37 @@ public class Application {
                 statement.execute(sql);
             }
 
-            var sql2 = "INSERT INTO users (username, phone) VALUES ('tom111my', '12222222'), ('rrrrr', '88888')";
-            try (var statement2 = conn.createStatement()) {
-                statement2.executeUpdate(sql2);
-            }
-
-
             var sql5 = "INSERT INTO users (username, phone) VALUES (?, ?)";
             try (var preparedStatement = conn.prepareStatement(sql5)) {
-                preparedStatement.setString(1, "Request user1");
-                preparedStatement.setString(2, "1234567890");
+                preparedStatement.setString(1, "User1");
+                preparedStatement.setString(2, "123");
                 preparedStatement.executeUpdate();
 
-                preparedStatement.setString(1, "Request user 222");
-                preparedStatement.setString(2, "00000");
+                preparedStatement.setString(1, "User2");
+                preparedStatement.setString(2, "456");
+                preparedStatement.executeUpdate();
+
+                preparedStatement.setString(1, "User3");
+                preparedStatement.setString(2, "789");
                 preparedStatement.executeUpdate();
             }
 
-            var sql6 = "DELETE FROM users WHERE phone = ?";
-            try (var preparedStatement = conn.prepareStatement(sql6)) {
-                preparedStatement.setString(1, "88888");
-                preparedStatement.executeUpdate();
+            var userOne = new User("Andrey", "000000");
+            System.out.println(userOne.getPhone());
 
-            }
+            UserDAO.save(userOne);
 
-            System.out.println("--- РЕЗУЛЬТАТ ----------");
+
+            System.out.println("--- РЕЗУЛЬТАТ -------------------");
             var sql3 = "SELECT * FROM users";
             try (var statement3 = conn.createStatement()) {
                 var resultSet = statement3.executeQuery(sql3);
                 while (resultSet.next()) {
-                    System.out.println(resultSet.getString("username"));
+                    System.out.print(resultSet.getString("username") + " ");
                     System.out.println(resultSet.getString("phone"));
                 }
             }
-            System.out.println("----------------------");
+            System.out.println("-------------------------------------");
 
         }
     }
